@@ -25,8 +25,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import imagen1 from "assets/img/portadaLantterra.jpg"
-import imagen2 from "assets/img/construccion.jpg"
-import imagen3 from "assets/img/mov_tierra.jpeg"
+import imagen2 from "assets/img/our2.jpg"
+import imagen3 from "assets/img/our1.jpg"
 
 
 import List from '@material-ui/core/List';
@@ -56,69 +56,19 @@ export default function MediaCard() {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8} >
              <h1 className={classes.title}>Conoce nuestros servicios</h1>
+             <h4 className={classes.subtitulo}>
+            Somos una empresa de consultoría, ingeniería y capacitación ambiental 
+            conformada por un equipo de profesionales organizado para brindar una consultoría integral,
+            de calidad y en tiempos óptimos para dar solución a las necesidades de cada cliente.
+            </h4>
           </GridItem>
       </GridContainer>
       <div className={classes.seccion}>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card className={classes.card} style={{margin: "30px"}}>
-            <CardActionArea>
-                    <CardMedia
-                    component="img"
-                    alt="Contemplative Reptile"
-                    height="140"
-                    image={imagen1}
-                    title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Arriendo de maquinaria pesada
-                    </Typography>
-                    
-                    </CardContent>
-                </CardActionArea>
-                    <CardActions>
-                        <List >
-                            <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Bulldozers " />
-                            </ListItem>
-
-                            <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Excavadoras " />
-                            </ListItem>
-
-                            <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Motoniveladoras" />
-                            </ListItem>
-
-                            <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Cargadores frontales " />
-                            </ListItem>
-
-                            <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Rodillo vibro compactador"/>
-                            </ListItem> 
-                        </List>
-                    </CardActions>
-                </Card>
+        <GridItem xs={12} sm={12} md={1}>
           </GridItem>
 
-          <GridItem xs={12} sm={12} md={4} className={classes.root}>
+          <GridItem xs={12} sm={12} md={5} className={classes.root}>
            
            <Card  className={classes.card} style={{margin: "30px"}}>
                <CardActionArea >
@@ -131,60 +81,121 @@ export default function MediaCard() {
                    />
                    <CardContent>
                    <Typography gutterBottom variant="h5" component="h2">
-                       Movimiento de tierra
+                       Educación Ambiental
                    </Typography>
                    
                    </CardContent>
                </CardActionArea>
-                   <CardActions>
+                   <CardActions className={classes.seccion}>
                        <List >
                             <ListItem className={classes.card}>
                             <ListItemIcon>
                                 <ArrowRightIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Construcción de caminos" />
+                            <ListItemText primary="Educación Ambiental y Capacitaciones. (en este caso se podría certificar por SEREMI de Salud, SGA y Norma Chilena 2728)" />
                             </ListItem>
 
                             <ListItem className={classes.card}>
                             <ListItemIcon>
                                 <ArrowRightIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Mantenciones de caminos" />
+                            <ListItemText primary="Higiene ambiental y control de Vectores. (¿Se requiere autorización sanitaria y capacitar a un aplicador?" />
                             </ListItem> 
 
                             <ListItem className={classes.card}>
                             <ListItemIcon>
                                 <ArrowRightIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Mejoramiento de caminos" />
+                            <ListItemText primary="Permisos Sectoriales (Mi experiencia principalmente 140, 142)" />
                             </ListItem>  
 
                            <ListItem className={classes.card}>
                            <ListItemIcon>
                                <ArrowRightIcon />
                            </ListItemIcon>
-                           <ListItemText primary="Plataformas" />
+                           <ListItemText primary="Industria, taller y bodega." />
                            </ListItem>
 
                            <ListItem className={classes.card}>
                            <ListItemIcon>
                                <ArrowRightIcon />
                            </ListItemIcon>
-                           <ListItemText primary="Excavaciones" />
+                           <ListItemText primary="Aplicación de plaguicidas uso sanitario y domestico" />
+                           </ListItem> 
+                        
+                       </List>
+                   </CardActions>
+               </Card>
+         </GridItem>
+         
+
+         <GridItem xs={12} sm={12} md={5} className={classes.root}>
+           
+           <Card  className={classes.card} style={{margin: "30px"}}>
+               <CardActionArea >
+                   <CardMedia
+                   component="img"
+                   alt="Contemplative Reptile"
+                   height="140"
+                   image={imagen2}
+                   title="Contemplative Reptile"
+                   />
+                   <CardContent>
+                   <Typography gutterBottom variant="h5" component="h2">
+                       Asesorías
+                   </Typography>
+                   
+                   </CardContent>
+               </CardActionArea>
+                   <CardActions className={classes.seccion}>
+                       <List >
+                            <ListItem className={classes.card}>
+                            <ListItemIcon>
+                                <ArrowRightIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Declaración de residuos peligrosos" />
+                            </ListItem>
+
+                            <ListItem className={classes.card}>
+                            <ListItemIcon>
+                                <ArrowRightIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Autorización de transporte de residuos peligrosos y no peligroso" />
+                            </ListItem> 
+
+                            <ListItem className={classes.card}>
+                            <ListItemIcon>
+                                <ArrowRightIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Autorización de almacenamiento de residuos peligrosos y no peligrosos" />
+                            </ListItem>  
+
+                           <ListItem className={classes.card}>
+                           <ListItemIcon>
+                               <ArrowRightIcon />
+                           </ListItemIcon>
+                           <ListItemText primary="Autorización de destinatario de residuos peligrosos y no peligrosos" />
+                           </ListItem>
+
+                           <ListItem className={classes.card}>
+                           <ListItemIcon>
+                               <ArrowRightIcon />
+                           </ListItemIcon>
+                           <ListItemText primary="Aprobación de planes de manejo de residuos peligrosos" />
                            </ListItem> 
 
                            <ListItem className={classes.card}>
                            <ListItemIcon>
                                <ArrowRightIcon />
                            </ListItemIcon>
-                           <ListItemText primary="Terrazas" />
+                           <ListItemText primary="Cartas de pertinencias (rubro eléctrico)" />
                            </ListItem> 
 
                            <ListItem className={classes.card}>
                            <ListItemIcon>
                                <ArrowRightIcon />
                            </ListItemIcon>
-                           <ListItemText primary="Trabajo de cortes a cota" />
+                           <ListItemText primary="DIA (rubro eléctrico)" />
                            </ListItem> 
 
                             
@@ -193,57 +204,9 @@ export default function MediaCard() {
                </Card>
          </GridItem>
 
-          <GridItem xs={12} sm={12} md={4}>
-            
-            <Card className={classes.card} style={{margin: "30px"}}>
-            <CardActionArea>
-                    <CardMedia
-                    component="img"
-                    alt="Contemplative Reptile"
-                    height="140"
-                    image={imagen2}
-                    title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Construcción
-                    </Typography>
-                    
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <List >
-                        <ListItem className={classes.card}>
-                        <ListItemIcon>
-                            <ArrowRightIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Proyectos" />
-                        </ListItem>
-
-                        <ListItem className={classes.card}>
-                        <ListItemIcon>
-                            <ArrowRightIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Canchas de futbol" />
-                        </ListItem> 
-
-                        <ListItem className={classes.card}>
-                        <ListItemIcon>
-                            <ArrowRightIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Plataformas" />
-                        </ListItem>      
-                        <ListItem className={classes.card}>
-                            <ListItemIcon>
-                                <ArrowRightIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Terrazas" />
-                            </ListItem> 
-                    </List>
-                </CardActions>
-                </Card>
+         
+         <GridItem xs={12} sm={12} md={1}>
           </GridItem>
-          
         </GridContainer>
       </div>
     </div>

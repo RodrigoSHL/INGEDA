@@ -22,46 +22,38 @@ export default function ProductSection() {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h1 className={classes.title}>¿Quiénes somos?</h1>
-          <h4 className={classes.description} style={{marginTop:"20px"}}>
-          LANTTERRA es una empresa que surge para satisfacer las necesidades 
-          de sus clientes prestando nuestros servicios en el rubro 
-          de movimiento de tierra, remoción, traslado de material 
-          mejoramiento de caminos, y arriendo de maquinarias.
-          </h4>
-          <h4 className={classes.description} >
-          Realizando distintos tipos de trabajos sobre tierra, 
-          tales como, movimientos entre plataformas, terrazas, 
-          canchas, construcción y mantención de caminos.
-          </h4>
-          <h4 className={classes.description} style={{marginBottom:"20px"}}  >
-          Contamos con operadores calificados, eficaces y con vasta experiencia,
-           maximizando los tiempo de ejecución.
-          </h4>
+          
+          <h3 className={classes.description} style={{marginTop:"20px", marginBottom:"20px" }} >
+            Somos una empresa de consultoría, ingeniería y capacitación ambiental 
+            conformada por un equipo de profesionales organizado para brindar una consultoría integral,
+            de calidad y en tiempos óptimos para dar solución a las necesidades de cada cliente.
+            </h3>
+          
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Movimiento de tierra"
+              title="Educación Ambiental"
               icon={VerifiedUser}
-              iconColor="info"
+              iconColor="primary"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Arriendo de maquinaria pesada"
+              title="Asesorías"
               icon={VerifiedUser}
-              iconColor="success"
+              iconColor="primary"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Construcción"
+              title="Normativas"
               icon={VerifiedUser}
-              iconColor="danger"
+              iconColor="primary"
               vertical
             />
           </GridItem>

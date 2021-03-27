@@ -99,10 +99,9 @@ export default function Components(props) {
         <SectionOurs />
         <SectionPolitica />     
         <SectionOurServices/>
-        <SectionGaleria />
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/contacto"} className={classes.link}>
-            <Button color="danger" size="lg" simple>
+            <Button color="primary" size="lg" simple>
               Contáctanos
             </Button>
           </Link>

@@ -24,7 +24,7 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-import logo from "assets/img/logov1.png";
+import logoIngeda from "assets/img/png_ingeda.png";
 
 const dashboardRoutes = [];
 
@@ -42,7 +42,7 @@ export default function SomosPage(props) {
         {
           <List>
             <ListItem >  
-            <Link to="/"><img className={classes.img} src={logo}/></Link>
+            <Link to="/"><img className={classes.img} src={logoIngeda}/></Link>
             </ListItem> 
           </List>
         }
@@ -50,21 +50,21 @@ export default function SomosPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "primary"
+          color: "white"
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/portadaQuienesSomos.jpg")}>
+      <Parallax filter image={require("assets/img/portada_ingeda.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>LANTTERRA</h1>
+              <h1 className={classes.title}>INGEDA</h1>
               <h4>
-              Conoce nuestra maquinaria en el siguiente video.
+              Conócenos más en el siguiente video.
               </h4>
               <br />
               <Button
-                color="danger"
+                color="primary"
                 size="lg"
                 href="https://youtu.be/vlbKdeE49SY"
                 target="_blank"

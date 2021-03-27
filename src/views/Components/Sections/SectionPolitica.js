@@ -30,6 +30,10 @@ export default function SectionPills() {
           <GridItem xs={12} sm={12} md={12} lg={12}>
               <NavPills
                 color="primary"
+                horizontal={{
+                  tabsGrid: { xs: 12, sm: 4, md: 4 },
+                  contentGrid: { xs: 12, sm: 8, md: 8 }
+                }}
                 tabs={[
                   {
                     tabButton: "Misión",
@@ -65,7 +69,7 @@ export default function SectionPills() {
                 ]}
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={12} style={{ backgroundColor: "#999999", height: "30px", marginTop:"60px" }}>
+            <GridItem xs={12} sm={12} md={12} style={{ backgroundColor: "#999999", height: "30px", marginTop:"60px", marginBottom : "60px" }}>
 
 </GridItem>    
       </GridContainer>

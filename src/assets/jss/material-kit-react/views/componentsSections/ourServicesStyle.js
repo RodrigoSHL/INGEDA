@@ -13,7 +13,8 @@ const productStyle = {
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
+    color: "#FFFFFF"
   },
   description: {
     color: "#999"
@@ -26,7 +27,8 @@ const productStyle = {
       transform: "scale(1.1)"
     }
   },
-  seccion:{
+  subtitulo:{
+    color: "#FFFFFF"
   }
 };
 
